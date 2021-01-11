@@ -1,15 +1,15 @@
 {
-  "name": "kakao-take-home-assignment",
+  "name": "spa_ts_corejs_polyfill_webpack_boilerplate",
   "private": true,
   "version": "1.0.0",
-  "description": "kakao-take-home-assignment",
+  "description": "spa_ts_corejs_polyfill_webpack_boilerplate",
   "main": "src/index.ts",
   "scripts": {
     "dev": "NODE_ENV=DEVELOPMENT webpack-dev-server",
     "build": "NODE_ENV=PRODUCTION webpack --progress"
   },
   "keywords": [],
-  "author": "soomyung",
+  "author": "vannskang_soom",
   "license": "ISC",
   "dependencies": {
     "core-js": "^3.7.0"
