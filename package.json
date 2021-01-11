@@ -1,0 +1,30 @@
+{
+  "name": "kakao-take-home-assignment",
+  "private": true,
+  "version": "1.0.0",
+  "description": "kakao-take-home-assignment",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "NODE_ENV=DEVELOPMENT webpack-dev-server",
+    "build": "NODE_ENV=PRODUCTION webpack --progress"
+  },
+  "keywords": [],
+  "author": "soomyung",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/runtime-corejs3": "^7.11.2",
+    "babel-loader": "^8.1.0",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.1",
+    "whatwg-fetch": "^3.5.0"
+  }
+}
