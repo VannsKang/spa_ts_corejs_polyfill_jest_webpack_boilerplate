@@ -1,53 +1,51 @@
-const path = require("path");
+const path = require('path');
 const { NODE_ENV } = process.env;
 
 const config = {
-  mode: "development",
-
-  entry: "./src/index.ts",
+  entry: './src/index.ts',
 
   output: {
-    path: path.resolve(__dirname, "dist"),
-    publicPath: "dist",
-    filename: "bundle.js",
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: 'dist',
+    filename: 'bundle.js',
   },
 
   resolve: {
-    extensions: [".ts", ".js"],
+    extensions: ['.ts', '.js'],
   },
 
   module: {
     rules: [
       {
         test: /\.ts$/,
-        include: [path.resolve(__dirname, "src")],
+        include: [path.resolve(__dirname, 'src')],
         exclude: [/node_modules/],
-        use: ["babel-loader", "ts-loader"],
+        use: ['babel-loader', 'ts-loader'],
       },
     ],
   },
 };
 
-if (NODE_ENV === "DEVELOPMENT") {
+if (NODE_ENV === 'DEVELOPMENT') {
   config.devServer = {
     // contentBase: path.resolve(__dirname, "dist"),
     disableHostCheck: true,
-    host: "0.0.0.0",
+    host: 'localhost',
     port: 8080,
     historyApiFallback: true,
     hot: true,
     inline: true,
     // open: true,
     overlay: true,
-    clientLogLevel: "warning",
+    clientLogLevel: 'warning',
     quiet: true,
   };
 
-  config.devtool = "inline-source-map";
+  config.devtool = 'inline-source-map';
 }
 
-if (NODE_ENV === "PRODUCTION") {
-  config.devtool = "source-map";
+if (NODE_ENV === 'PRODUCTION') {
+  config.devtool = 'source-map';
 }
 
 module.exports = config;
