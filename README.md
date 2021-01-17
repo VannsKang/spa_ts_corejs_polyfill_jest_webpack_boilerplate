@@ -1,6 +1,6 @@
 # spa_ts_corejs_polyfill_jest_webpack_boilerplate
 
-> 본 스타터팩은 다음과 같은 모듈로 구성되어 있습니다.
+> 본 스타터팩은 Babel / TypeScript / Jest Study에서 정리한 내용으로 구성하였습니다.
 
 - "core-js": "^3.7.0"
 - "@babel/core": "^7.11.6",
