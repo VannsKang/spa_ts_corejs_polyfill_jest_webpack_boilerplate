@@ -35,10 +35,13 @@ if (NODE_ENV === 'DEVELOPMENT') {
     historyApiFallback: true,
     hot: true,
     inline: true,
-    // open: true,
+    open: true,
     overlay: true,
     clientLogLevel: 'warning',
     quiet: true,
+    proxy: {
+      '/api': 'http://localhost:8888/',
+    },
   };
 
   config.devtool = 'inline-source-map';
